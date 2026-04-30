@@ -121,98 +121,104 @@ const categories = [
 
 const section = {
   minHeight: "100vh",
-  padding: "clamp(40px, 4vw, 70px) clamp(24px, 5vw, 70px) clamp(120px, 9vw, 160px)",
+  padding:
+    "clamp(40px, 6vw, 70px) clamp(16px, 4vw, 70px) clamp(80px, 10vw, 160px)",
   background: "transparent",
 };
 
 const container = {
-  maxWidth: "min(92vw, 1500px)",
+  width: "100%",
+  maxWidth: "1400px", 
   margin: "0 auto",
 };
 
 const header = {
   textAlign: "center",
-  marginBottom: "clamp(50px, 6vw, 80px)",
+  marginBottom: "clamp(40px, 7vw, 80px)",
 };
 
 const eyebrow = {
   color: "#d18a9b",
-  fontSize: "clamp(16px, 1.2vw, 20px)",
+  fontSize: "clamp(14px, 3vw, 20px)",
   fontWeight: "800",
-  letterSpacing: "4px",
+  letterSpacing: "3px",
   textTransform: "uppercase",
-  marginBottom: "18px",
+  marginBottom: "14px",
 };
 
 const title = {
   color: "#2b2420",
-  fontSize: "clamp(42px, 5vw, 76px)",
-  lineHeight: "1.05",
-  letterSpacing: "-2px",
-  margin: "0 0 18px",
+  fontSize: "clamp(30px, 8vw, 76px)",
+  lineHeight: "1.12",
+  letterSpacing: "-1px",
+  margin: "0 0 16px",
 };
 
 const intro = {
   color: "#6b5e57",
-  fontSize: "clamp(17px, 1.3vw, 22px)",
-  lineHeight: "1.7",
-  maxWidth: "760px",
+  fontSize: "clamp(15px, 4vw, 22px)",
+  lineHeight: "1.65",
+  maxWidth: "720px",
   margin: "0 auto",
 };
 
 const categoryStack = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))",
-  gap: "clamp(28px, 4vw, 48px)",
+  gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", 
+  gap: "clamp(20px, 5vw, 48px)",
 };
 
 const categoryCard = {
+  width: "100%",
+  minWidth: 0,
   background: "rgba(255, 250, 246, 0.94)",
   border: "1px solid #eadfd6",
-  borderRadius: "34px",
-  padding: "28px",
-  boxShadow: "0 24px 70px rgba(209, 138, 155, 0.14)",
+  borderRadius: "28px",
+  padding: "clamp(16px, 4vw, 28px)",
+  boxShadow: "0 20px 55px rgba(209, 138, 155, 0.12)",
 };
 
 const collage = {
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
-  gridTemplateRows: "220px 220px",
-  gap: "14px",
-  marginBottom: "28px",
+  gridAutoRows: "clamp(130px, 32vw, 220px)",
+  gap: "clamp(8px, 2.5vw, 14px)",
+  marginBottom: "clamp(20px, 5vw, 28px)",
 };
 
 const cosplayLayout = {
   display: "grid",
   gridTemplateColumns: "1fr",
-  gridTemplateRows: "220px 220px",
-  gap: "14px",
-  marginBottom: "28px",
+  gap: "clamp(8px, 2.5vw, 14px)",
+  marginBottom: "clamp(20px, 5vw, 28px)",
 };
 
 const cosplayHero = {
-  borderRadius: "22px",
+  height: "clamp(180px, 48vw, 260px)",
+  borderRadius: "20px",
   overflow: "hidden",
   border: "1px solid #eadfd6",
-  boxShadow: "0 14px 35px rgba(200, 164, 106, 0.12)",
+  boxShadow: "0 12px 28px rgba(200, 164, 106, 0.12)",
   background: "#fffaf6",
-  minHeight: 0,
+  minWidth: 0,
 };
 
 const cosplayBottomGrid = {
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
-  gap: "14px",
-  minHeight: 0,
+  gap: "clamp(8px, 2.5vw, 14px)",
+  minWidth: 0,
 };
 
 const imageTile = {
-  borderRadius: "22px",
+  height: "100%",
+  minHeight: "clamp(130px, 32vw, 220px)",
+  borderRadius: "20px",
   overflow: "hidden",
   border: "1px solid #eadfd6",
-  boxShadow: "0 14px 35px rgba(200, 164, 106, 0.12)",
+  boxShadow: "0 12px 28px rgba(200, 164, 106, 0.12)",
   background: "#fffaf6",
-  minHeight: 0,
+  minWidth: 0,
 };
 
 const photo = {
@@ -222,7 +228,7 @@ const photo = {
 };
 
 const textPanel = {
-  padding: "4px 6px 6px",
+  padding: "2px 2px 4px",
 };
 
 const categoryNumber = {
@@ -234,29 +240,29 @@ const categoryNumber = {
 
 const categoryTitle = {
   color: "#d18a9b",
-  fontSize: "clamp(34px, 3.2vw, 52px)",
+  fontSize: "clamp(28px, 7vw, 52px)",
   lineHeight: "1",
   margin: "0 0 10px",
 };
 
 const categorySubtitle = {
   color: "#2b2420",
-  fontSize: "clamp(20px, 1.6vw, 26px)",
+  fontSize: "clamp(18px, 4.5vw, 26px)",
   fontWeight: "800",
   margin: "0 0 12px",
 };
 
 const accentLine = {
-  width: "58px",
+  width: "54px",
   height: "4px",
   borderRadius: "999px",
   background: "linear-gradient(135deg, #d18a9b, #e6c27a)",
-  marginBottom: "16px",
+  marginBottom: "14px",
 };
 
 const categoryText = {
   color: "#6b5e57",
-  fontSize: "clamp(15px, 1.05vw, 17px)",
+  fontSize: "clamp(14px, 3.7vw, 17px)",
   lineHeight: "1.65",
   margin: 0,
 };

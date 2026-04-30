@@ -19,9 +19,7 @@ const Outreach = () => {
 
           <div style={goldLine}></div>
 
-          <p style={softNote}>
-            Less spam. More context. Better conversations.
-          </p>
+          <p style={softNote}>Less spam. More context. Better conversations.</p>
         </div>
 
         <div style={rightPanel}>
@@ -32,12 +30,16 @@ const Outreach = () => {
             </div>
 
             <p style={letterText}>
-              Hi — I came across your work on distributed caching and really liked how you approached the consistency vs latency tradeoffs.
+              Hi — I came across your work on distributed caching and really
+              liked how you approached the consistency vs latency tradeoffs.
             </p>
 
             <p style={letterText}>
-              I’m currently recruiting for a team tackling similar problems at scale, and your background stood out right away as a strong match.
+              I’m currently recruiting for a team tackling similar problems at
+              scale, and your background stood out right away as a strong match.
+            </p>
 
+            <p style={letterText}>
               Would you be open to a quick intro conversation?
             </p>
 
@@ -78,133 +80,146 @@ const principles = [
 
 const section = {
   minHeight: "100vh",
-  padding: "clamp(90px, 8vw, 140px) clamp(24px, 5vw, 70px) clamp(40px, 4vw, 70px)",
+  padding:
+    "clamp(70px, 8vw, 140px) clamp(16px, 4vw, 70px) clamp(50px, 6vw, 80px)",
   background: "transparent",
+  overflowX: "hidden",
 };
 
 const container = {
-  maxWidth: "min(92vw, 1500px)",
+  width: "100%",
+  maxWidth: "1400px",
   margin: "0 auto",
   display: "grid",
-  gridTemplateColumns: "0.95fr 1.05fr",
-  gap: "clamp(40px, 5vw, 80px)",
+  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 420px), 1fr))",
+  gap: "clamp(28px, 5vw, 80px)",
   alignItems: "center",
 };
 
 const leftPanel = {
-  padding: "clamp(42px, 5vw, 76px)",
+  minWidth: 0,
+  padding: "clamp(8px, 3vw, 60px)",
 };
 
 const eyebrow = {
   color: "#d18a9b",
-  fontSize: "clamp(16px, 1.2vw, 20px)",
+  fontSize: "clamp(14px, 3vw, 20px)",
   fontWeight: "800",
-  letterSpacing: "4px",
+  letterSpacing: "3px",
   textTransform: "uppercase",
-  marginBottom: "18px",
+  marginBottom: "16px",
 };
 
 const title = {
   color: "#2b2420",
-  fontSize: "clamp(42px, 5vw, 74px)",
-  lineHeight: "1.02",
-  letterSpacing: "-2px",
-  margin: "0 0 28px",
+  fontSize: "clamp(32px, 7.5vw, 74px)",
+  lineHeight: "1.08",
+  letterSpacing: "-1px",
+  margin: "0 0 24px",
 };
 
 const description = {
   color: "#6b5e57",
-  fontSize: "clamp(17px, 1.25vw, 21px)",
-  lineHeight: "1.75",
-  maxWidth: "640px",
-  marginBottom: "30px",
+  fontSize: "clamp(15px, 3.8vw, 21px)",
+  lineHeight: "1.7",
+  maxWidth: "680px",
+  marginBottom: "26px",
 };
 
 const goldLine = {
-  width: "90px",
+  width: "clamp(70px, 14vw, 90px)",
   height: "5px",
   borderRadius: "999px",
   background: "linear-gradient(135deg, #d18a9b, #e6c27a)",
-  marginBottom: "22px",
+  marginBottom: "20px",
 };
 
 const softNote = {
   color: "#c8a46a",
-  fontSize: "clamp(18px, 1.4vw, 24px)",
+  fontSize: "clamp(17px, 4vw, 24px)",
   fontWeight: "800",
-  letterSpacing: "1px",
+  letterSpacing: "0.8px",
+  margin: 0,
 };
 
 const rightPanel = {
+  minWidth: 0,
   position: "relative",
 };
 
 const letterCard = {
+  width: "100%",
+  boxSizing: "border-box",
   position: "relative",
   background: "#fffaf6",
   border: "1px solid #eadfd6",
-  borderRadius: "34px",
-  padding: "clamp(34px, 4vw, 56px)",
-  boxShadow: "0 30px 90px rgba(209, 138, 155, 0.18)",
-  transform: "rotate(-1.2deg)",
+  borderRadius: "clamp(26px, 4vw, 34px)",
+  padding: "clamp(24px, 5vw, 56px)",
+  boxShadow: "0 24px 70px rgba(209, 138, 155, 0.16)",
+  transform: "rotate(-0.6deg)",
+  transformOrigin: "center",
 };
 
 const letterTop = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  marginBottom: "28px",
+  gap: "14px",
+  marginBottom: "clamp(20px, 4vw, 28px)",
 };
 
 const stamp = {
-  width: "58px",
-  height: "58px",
-  borderRadius: "18px",
+  width: "clamp(46px, 11vw, 58px)",
+  height: "clamp(46px, 11vw, 58px)",
+  flex: "0 0 auto",
+  borderRadius: "16px",
   background: "linear-gradient(135deg, #f4b6c2, #e6c27a)",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   color: "#2b2420",
-  fontSize: "28px",
+  fontSize: "clamp(22px, 5vw, 28px)",
   boxShadow: "0 12px 32px rgba(200, 164, 106, 0.25)",
 };
 
 const letterLabel = {
   color: "#d18a9b",
-  fontSize: "14px",
+  fontSize: "clamp(12px, 2.8vw, 14px)",
   fontWeight: "800",
-  letterSpacing: "2px",
+  letterSpacing: "1.6px",
   textTransform: "uppercase",
   margin: 0,
+  textAlign: "right",
 };
 
 const letterText = {
   color: "#4f443e",
-  fontSize: "clamp(17px, 1.2vw, 20px)",
-  lineHeight: "1.75",
-  marginBottom: "18px",
+  fontSize: "clamp(15px, 3.8vw, 20px)",
+  lineHeight: "1.7",
+  marginBottom: "16px",
 };
 
 const signature = {
   color: "#d18a9b",
-  fontSize: "22px",
+  fontSize: "clamp(20px, 5vw, 24px)",
   fontWeight: "800",
-  marginTop: "30px",
+  marginTop: "26px",
 };
 
 const principleGrid = {
   display: "grid",
-  gridTemplateColumns: "repeat(3, 1fr)",
-  gap: "18px",
-  marginTop: "30px",
+  gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+  gap: "clamp(14px, 3vw, 18px)",
+  marginTop: "clamp(24px, 4vw, 30px)",
 };
 
 const principleCard = {
+  minWidth: 0,
   background: "rgba(255, 250, 246, 0.85)",
   border: "1px solid #eadfd6",
-  borderRadius: "26px",
-  padding: "24px",
-  boxShadow: "0 20px 50px rgba(200, 164, 106, 0.12)",
+  borderRadius: "24px",
+  padding: "clamp(18px, 4vw, 24px)",
+  boxShadow: "0 18px 45px rgba(200, 164, 106, 0.12)",
 };
 
 const heartCircle = {
@@ -221,13 +236,13 @@ const heartCircle = {
 
 const principleTitle = {
   color: "#2b2420",
-  fontSize: "20px",
+  fontSize: "clamp(18px, 4vw, 20px)",
   margin: "0 0 8px",
 };
 
 const principleText = {
   color: "#6b5e57",
-  fontSize: "15px",
+  fontSize: "clamp(14px, 3.5vw, 15px)",
   lineHeight: "1.55",
   margin: 0,
 };
