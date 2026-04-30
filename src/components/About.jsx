@@ -98,10 +98,8 @@ export default function About() {
           <div style={bottomCard}>
             <h3 style={bottomTitle}>Why Recruiting?</h3>
             <p style={bottomText}>
-              I became interested in recruiting after seeing how difficult it is to evaluate engineers well. 
-              Strong candidates don’t always look obvious on paper, and hiring decisions often miss the signals that actually matter in real systems.
-
-              I want to bring an engineering perspective into that process, helping teams identify people who can truly perform, not just interview well.
+                I became interested in recruiting after seeing how hard it is to evaluate engineers well. 
+                I want to bring an engineering perspective into hiring and identify candidates who can truly perform beyond the interview.
             </p>
           </div>
 
