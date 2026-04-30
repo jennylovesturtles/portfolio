@@ -17,19 +17,15 @@ const Sourcing = () => {
           <div style={accentLine}></div>
 
           <p style={sectionDescription}>
-            My engineering background helps me look beyond resumes and job
-            titles.
+            I don’t rely on LinkedIn alone. I actively look at where engineers
+            build, share, and think — using those signals to identify candidates
+            who demonstrate real depth and consistency.
           </p>
 
           <p style={sectionDescription}>
-            There is a whole world outside of LinkedIn where engineers gather,
-            build, and share ideas. I pay attention to how candidates solve
-            problems across code, writing, projects, and community activity.
-          </p>
-
-          <p style={sectionDescription}>
-            Instead of relying on keyword matches, I look for curiosity,
-            consistency, and real technical depth.
+            Each platform gives a different lens into how someone works. I use
+            that context to evaluate candidates beyond resumes and surface
+            stronger matches.
           </p>
         </div>
 
@@ -79,41 +75,41 @@ const sources = [
     title: "GitHub",
     icon: FaGithub,
     tag: "Code signal",
-    text: "Open-source work, project history, consistency, and real engineering curiosity.",
+    text: "I use GitHub to evaluate consistency over time — looking at commit history, project depth, and how engineers structure real systems beyond one-off projects.",
   },
   {
     title: "Reddit",
     icon: FaRedditAlien,
     tag: "Community signal",
-    text: "Authentic technical discussions, niche communities, and emerging talent signals.",
+    text: "I use Reddit to find engineers engaged in real technical discussions — paying attention to how they explain concepts, ask questions, and think through problems.",
   },
   {
     title: "X / Twitter",
     icon: FaXTwitter,
     tag: "Builder signal",
-    text: "Engineers sharing projects, technical threads, launches, and startup activity.",
+    text: "I use X to identify builders who consistently ship and share their work — especially engineers actively participating in the broader technical ecosystem.",
   },
   {
     title: "Hacker News",
     icon: SiYcombinator,
     tag: "Startup signal",
-    text: "Founder-minded engineers, technical opinions, and public project launches.",
+    text: "I use Hacker News to find engineers who think critically about systems and tradeoffs — often surfacing candidates with strong product and startup instincts.",
   },
   {
     title: "Dev.to",
     icon: FaDev,
     tag: "Writing signal",
-    text: "Technical blogs, project writeups, learning notes, and communication style.",
+    text: "I use Dev.to to evaluate how clearly engineers communicate technical ideas — a strong signal for depth of understanding and senior-level thinking.",
   },
   {
     title: "Substack",
     icon: SiSubstack,
     tag: "Depth signal",
-    text: "Long-form thinking, niche expertise, technical judgment, and perspective.",
+    text: "I use Substack to identify engineers with deep, long-form thinking — looking for technical judgment, perspective, and how they reason through complex problems.",
   },
 ];
 
-/* STYLES */
+/* STYLES (unchanged from your last version) */
 
 const section = {
   minHeight: "100vh",
@@ -150,7 +146,6 @@ const card = {
   width: "100%",
   boxSizing: "border-box",
   background: "linear-gradient(180deg, #fffaf6, #fff6f2)",
-  border: "none",
   borderRadius: "26px",
   padding: "clamp(20px, 4vw, 26px)",
   boxShadow: "0 20px 55px rgba(200, 164, 106, 0.16)",
