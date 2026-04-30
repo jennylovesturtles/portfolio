@@ -50,9 +50,12 @@ export default function About() {
           </h2>
 
           <p style={intro}>
-            My background blends people-facing experience with real engineering
-            work — giving me a different perspective on how to evaluate,
-            understand, and connect technical talent.
+            <p style={intro}>
+                <p style={intro}>
+                    My path into recruiting has been shaped by a mix of people-facing roles and hands-on engineering work.
+                    Each step has helped me build a different way of understanding how people think.
+                </p>
+            </p>
           </p>
         </div>
 
@@ -95,16 +98,19 @@ export default function About() {
           <div style={bottomCard}>
             <h3 style={bottomTitle}>Why Recruiting?</h3>
             <p style={bottomText}>
-              I’m drawn to recruiting because it combines the parts of engineering I enjoyed most:
-              communication, mentorship, trust-building, and understanding how people think.
+              I became interested in recruiting after seeing how difficult it is to evaluate engineers well. 
+              Strong candidates don’t always look obvious on paper, and hiring decisions often miss the signals that actually matter in real systems.
+
+              I want to bring an engineering perspective into that process, helping teams identify people who can truly perform, not just interview well.
             </p>
           </div>
 
           <div style={bottomCard}>
             <h3 style={bottomTitle}>Why Now?</h3>
             <p style={bottomText}>
-              I’m ready to bring my engineering background into a people-centered role where I can
-              help technical talent find the right opportunities and grow alongside strong teams.
+              After working on production systems, I realized I was most drawn to how engineers grow and find their place within teams.
+
+              Recruiting lets me stay close to the technical space while helping people find roles where they can truly thrive.
             </p>
           </div>
         </div>
@@ -158,7 +164,7 @@ const intro = {
 
 const grid = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", // FIXED
+  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", 
   gap: "clamp(16px, 4vw, 32px)",
   marginBottom: "clamp(50px, 6vw, 100px)",
 };
