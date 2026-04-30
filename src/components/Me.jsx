@@ -87,15 +87,15 @@ const Me = () => {
           </h2>
 
           <p style={description}>
-            I bring hands-on engineering experience into sourcing, screening,
-            and evaluating technical talent — with the ability to understand
-            candidates beyond resumes and keywords.
+            I identify engineering talent through more than resumes and keywords.
+            My background in production systems gives me the ability to evaluate candidates
+            the way engineers evaluate each other.
           </p>
 
           <p style={description}>
-            My passion for continual learning and my network of engineering
-            friends allows me to continue growing my technical knowledge in this
-            rapidly changing industry.
+            I’m transitioning into recruiting because I’ve been on the engineering side of the hiring process. 
+            I know what it takes to perform in real systems, and I want to help teams identify 
+            candidates who can do the same.
           </p>
 
           <div style={buttonStack}>
@@ -107,7 +107,7 @@ const Me = () => {
               onMouseEnter={handlePrimaryHover}
               onMouseLeave={handlePrimaryLeave}
             >
-              View Engineering Experience
+              View Engineering Resume
             </button>
 
             <button
@@ -118,7 +118,7 @@ const Me = () => {
               onMouseEnter={handlePrimaryHover}
               onMouseLeave={handlePrimaryLeave}
             >
-              View Recruiter Experience
+              View Recruiter Resume
             </button>
 
             <button
