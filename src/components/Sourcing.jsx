@@ -3,7 +3,7 @@ import { FaGithub, FaRedditAlien, FaDev } from "react-icons/fa";
 import { SiYcombinator, SiSubstack } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
-const githubSourcingProjectLink = "#";
+const githubSourcingProjectLink = "https://youtu.be/u-8QGmaGDWE";
 
 const Sourcing = () => {
   return (
