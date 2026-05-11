@@ -3,6 +3,8 @@ import { FaGithub, FaRedditAlien, FaDev } from "react-icons/fa";
 import { SiYcombinator, SiSubstack } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
+const githubSourcingProjectLink = "#";
+
 const Sourcing = () => {
   return (
     <section id="sourcing" style={section}>
@@ -23,6 +25,25 @@ const Sourcing = () => {
           <p style={sectionDescription}>
             Each platform gives a different signal into how someone works, and I use that context to evaluate candidates beyond resumes.
           </p>
+
+          <a
+            href={githubSourcingProjectLink}
+            target="_blank"
+            rel="noreferrer"
+            style={projectButton}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow =
+                "0 0 28px rgba(209, 138, 155, 0.5)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow =
+                "0 12px 28px rgba(209, 138, 155, 0.28)";
+            }}
+          >
+            Github Sourcing Project
+          </a>
         </div>
 
         <div style={signalBoard}>
@@ -223,4 +244,22 @@ const sectionDescription = {
   fontSize: "clamp(15px, 3.8vw, 20px)",
   lineHeight: "1.7",
   marginBottom: "18px",
+};
+
+const projectButton = {
+  width: "fit-content",
+  maxWidth: "100%",
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  marginTop: "8px",
+  padding: "14px 22px",
+  borderRadius: "999px",
+  background: "#d18a9b",
+  color: "#fffaf6",
+  fontSize: "clamp(15px, 3.6vw, 18px)",
+  fontWeight: "800",
+  textDecoration: "none",
+  boxShadow: "0 12px 28px rgba(209, 138, 155, 0.28)",
+  transition: "transform 0.25s ease, box-shadow 0.25s ease",
 };
