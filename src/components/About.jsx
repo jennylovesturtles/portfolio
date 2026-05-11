@@ -180,7 +180,9 @@ const cardStyle = {
 const cardHeader = {
   color: "#d18a9b",
   fontWeight: "800",
-  fontSize: "clamp(26px, 5vw, 48px)",
+  fontSize: "clamp(24px, 4vw, 42px)",
+  lineHeight: "1.05",
+  overflowWrap: "break-word",
   marginBottom: "10px",
 };
 
