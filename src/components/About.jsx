@@ -126,7 +126,7 @@ const section = {
 
 const container = {
   width: "100%",
-  maxWidth: "1200px",
+  maxWidth: "1400px",
   margin: "0 auto",
 };
 
@@ -162,7 +162,7 @@ const intro = {
 
 const grid = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", 
+  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", 
   gap: "clamp(16px, 4vw, 32px)",
   marginBottom: "clamp(50px, 6vw, 100px)",
 };
@@ -180,9 +180,9 @@ const cardStyle = {
 const cardHeader = {
   color: "#d18a9b",
   fontWeight: "800",
-  fontSize: "clamp(24px, 4vw, 42px)",
+  fontSize: "clamp(26px, 4vw, 46px)",
   lineHeight: "1.05",
-  overflowWrap: "break-word",
+  whiteSpace: "nowrap",
   marginBottom: "10px",
 };
 
