@@ -87,10 +87,7 @@ const Me = () => {
           </h2>
 
           <p style={description}>
-            I identify engineering talent through more than resumes and keywords.
-            My background in production systems gives me the ability to evaluate candidates
-            the way engineers evaluate each other. I identify strong candidates through
-            signal-based sourcing.
+            I identify engineering talent through more than resumes and keywords. My background in production systems gives me the ability to evaluate candidates the way engineers evaluate each other. I identify strong candidates through signal-based sourcing.
           </p>
 
           <p style={description}>

@@ -6,7 +6,7 @@ export default function About() {
       points: [
         "Kohls: Commission Sales Associate",
         "Cinemark: Assistant Manager",
-        "Burger King: Cashier",
+        "A-Plus Prep School: Tutor"
       ],
     },
     {
